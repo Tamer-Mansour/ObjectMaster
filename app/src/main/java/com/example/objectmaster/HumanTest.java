@@ -7,9 +7,9 @@ import android.widget.EditText;
 
 public class HumanTest extends AppCompatActivity {
     EditText etTest,etTest2,etTest3;
-    Wizard w = new Wizard(100,"10","+100",Human.getHealth());
-    Ninja n = new Ninja(120,"20","+200",100);
-    Samurai s = new Samurai(200,"30","+150",100);
+    Wizard w = new Wizard(100,10,100,Human.getHealth());
+    Ninja n = new Ninja(120,2,200,100);
+    Samurai s = new Samurai(200,30,150,100);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

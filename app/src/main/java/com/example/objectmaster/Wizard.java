@@ -1,17 +1,14 @@
 package com.example.objectmaster;
 
 public class Wizard extends Human {
-    public Wizard(int strength, String stealth, String intelligence, int health) {
+    static int health = 50;
+    static int intelligence = 8;
+    public Wizard(int strength, int stealth, int intelligence, int health) {
         super(strength, stealth, intelligence, health);
     }
+    public int mHealth(Human human){
 
-    @Override
-    public String toString() {
-        return "Wizard{" +
-                "stealth='" + stealth + '\'' +
-                ", intelligence='" + intelligence + '\'' +
-                ", strength=" + strength +
-                ", health=" + health +
-                '}';
+        return health += health;
     }
+
 }
