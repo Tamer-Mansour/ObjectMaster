@@ -3,7 +3,7 @@ package com.example.objectmaster;
 public class Human {
     String stealth,intelligence;
     int strength;
-    int health = 100;
+    static int health = 100;
 
     public Human(int strength, String stealth, String intelligence, int health) {
         this.strength = strength;
@@ -12,8 +12,11 @@ public class Human {
         this.health = health;
     }
 
-    public int attack() {
-        return health -= health;
+    public static int getHealth() {
+        return health;
     }
 
+    public void setHealth(int health) {
+        this.health = health;
+    }
 }
