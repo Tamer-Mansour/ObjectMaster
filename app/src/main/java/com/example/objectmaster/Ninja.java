@@ -9,6 +9,9 @@ public class Ninja extends Human {
     public void steal(Human human ){
         human.health = health -10;
     }
+    public void runAway(){
+        health -= 10;
+    }
 
 
 }
