@@ -6,9 +6,10 @@ public class Wizard extends Human {
     public Wizard(int strength, int stealth, int intelligence, int health) {
         super(strength, stealth, intelligence, health);
     }
-    public int mHealth(Human human){
+    public void mHealth(Human human){
 
-        return health += health;
+        human.health = health-(3* intelligence);
+
     }
 
 }
